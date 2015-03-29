@@ -10,8 +10,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentText;
 import tonius.simplyjetpacks.item.ItemPack;
-import tonius.simplyjetpacks.item.meta.FluxPack;
-import tonius.simplyjetpacks.item.meta.JetPlate;
 import tonius.simplyjetpacks.item.meta.Jetpack;
 import tonius.simplyjetpacks.item.meta.PackBase;
 import tonius.simplyjetpacks.util.StringUtils;
@@ -49,13 +47,6 @@ public class CommandSwitch extends CommandBase {
                         break nopack;
                     }
                     if (args[0].equals("charger")) {
-                        if (pack instanceof JetPlate) {
-                            ((JetPlate) pack).toggleCharger(armor, (EntityPlayer) sender, true);
-                            return;
-                        } else if (pack instanceof FluxPack) {
-                            pack.toggleOn(armor, (EntityPlayer) sender, false, true);
-                            return;
-                        }
                         sender.addChatMessage(new ChatComponentText(StringUtils.LIGHT_RED + StringUtils.translate("command.switch.noCharger")));
                         return;
                     }

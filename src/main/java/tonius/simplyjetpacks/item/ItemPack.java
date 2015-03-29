@@ -28,7 +28,6 @@ import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.IFluidContainerItem;
 import tonius.simplyjetpacks.SimplyJetpacks;
 import tonius.simplyjetpacks.client.util.RenderUtils;
-import tonius.simplyjetpacks.item.meta.FluxPack;
 import tonius.simplyjetpacks.item.meta.Jetpack;
 import tonius.simplyjetpacks.item.meta.PackBase;
 import tonius.simplyjetpacks.setup.FuelType;
@@ -479,14 +478,6 @@ public class ItemPack<T extends PackBase> extends ItemArmor implements IControll
     public static class ItemJetpack extends ItemPack<Jetpack> {
         
         public ItemJetpack(ModType modType) {
-            super(modType);
-        }
-        
-    }
-    
-    public static class ItemFluxPack extends ItemPack<FluxPack> {
-        
-        public ItemFluxPack(ModType modType) {
             super(modType);
         }
         

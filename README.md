@@ -1,4 +1,4 @@
-SimplyJetpacks
-==============
+AJetpack
+========
 
-An addon for Thermal Expansion and/or Ender IO that adds jetpacks, among some other things.
+An addon for Thermal Expansion that adds one configurable jetpack.
